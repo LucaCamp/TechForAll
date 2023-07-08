@@ -22,7 +22,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/github_username/techforall">
     <img src="/assets/img/icons8-tech-50.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -80,7 +80,7 @@ Visit my portfolio to know more about me: <a href="lucacamp.github.io">Portfolio
 
 Luca Campanella - campanella440@gmail.com
 
-Project Link: [https://main--stately-pavlova-48eb0e.netlify.app/](https://main--stately-pavlova-48eb0e.netlify.app/)
+Project Link: [https://techforall.netlify.app/](https://techforall.netlify.app/)
 
 <a href="https://www.linkedin.com/in/campanellaluca/">Linkedin</a>
 

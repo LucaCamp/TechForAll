@@ -1,8 +1,8 @@
 const cont = document.getElementById("containerOne");
 const loadBtn = document.getElementById("loadmore");
 
-let lastLoaded = 10;
-let firstLoaded= 0;
+
+let count= 0;
 
 
 
@@ -53,12 +53,12 @@ fetch ("https://hacker-news.firebaseio.com/v0/newstories.json",) //API to retrie
 
 
 
-    lastLoaded = lastLoaded + 10; //increase the variable for load +10 news
-    firstLoaded = firstLoaded +10; //increase the variable for load +10 news
+    count += 10; //increase the variable for load +10 news
+    
 
 
 
-    for(let i=firstLoaded; i<lastLoaded && i<500 && i>=firstLoaded; i++){ //for loop allow to add 10 news
+    for(let i=count - 10; i<count && i<500 ; i++){ //for loop allow to add 10 news
 
 
       fetch (`https://hacker-news.firebaseio.com/v0/item/${idNews[i]}.json`)

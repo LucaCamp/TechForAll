@@ -22,7 +22,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/techforall">
+  <a href="https://github.com/LucaCamp/techforall">
     <img src="/assets/img/icons8-tech-50.png" alt="Logo" width="80" height="80">
   </a>
 

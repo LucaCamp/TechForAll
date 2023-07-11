@@ -19,7 +19,9 @@ module.exports = {
     new HtmlWebpackPlugin({ title: 'Applicazione webpack',
   template: './src/index.html'})
   ],
-  devServer: {},
+  devServer: {
+    
+  },
   mode: 'production'
 }
 

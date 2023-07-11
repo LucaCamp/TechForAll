@@ -20,6 +20,6 @@ module.exports = {
   template: './src/index.html'})
   ],
   devServer: {},
-  mode: 'development'
+  mode: 'production'
 }
 

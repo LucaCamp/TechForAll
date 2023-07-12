@@ -37,12 +37,12 @@ function fetchNews(){
   
     for(let i=0; i<10; i++){   //view first 10 news
       // console.log(idNews[i]);
-  
+  console.log(i);
       fetch (`https://hacker-news.firebaseio.com/v0/item/${idNews[i]}.json`)
         .then((response)=> response.json())
         .then(data => {
   
-          let news = data; //more 10 news
+          let news = data; // 10 news
   
 
               
@@ -80,7 +80,7 @@ function fetchNews(){
   
   
       for(let i=count ; i<count+10 && i<500 ; i++){ //for loop allow to add 10 news
-        //  console.log(i);
+         console.log(i);
         
         fetch (`https://hacker-news.firebaseio.com/v0/item/${idNews[i]}.json`)
           .then((response)=> response.json())

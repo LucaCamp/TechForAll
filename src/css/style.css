@@ -18,15 +18,23 @@
   color:black;
 }
 .divhTitle{
-  border: 1px solid black;
+  border: 1px solid green;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   
-
 }
 
 .divButton {
+  
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  
+  
 }
 
 
@@ -51,12 +59,5 @@
 
 }
 
-.divButton {
-  position:absolute;
-  top:185px;
-  display: flex;
-  justify-content: space-between;
-  
-  width: 100%;
-}
+
 };

@@ -46,7 +46,7 @@
 
 ## TechForAll Javascript
 
-<img src="" alt="Screenshot" width="400" height="224">
+<img src="/src/img/Screenshot.PNG" alt="Screenshot" width="400" height="224">
 TechForAll is a Web App implemented with javascript to democratize the diffusion of information in the tech world. 
 At startup, the application shows the list of the last 10 news available by displaying the title, the link and the date of the news.
 

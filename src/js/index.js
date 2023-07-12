@@ -6,7 +6,7 @@ const loadBtn = document.getElementById("loadmore");
 
 let count= 0;
 
-loadNews ();
+loadNews (); // the function load first 10 news
 
 function loadNews(){
 
@@ -119,18 +119,62 @@ fetch ("https://hacker-news.firebaseio.com/v0/newstories.json",) //API to retrie
     pDate.innerHTML =" DATE: "+ newsDate + " ";
 
 
-    let button = document.createElement("button");
-    button.classList.add("btn", "btn-danger","ms-4","mb-3")
+
+    //create view button
+
+    let viewBtn = document.createElement("button");
+    viewBtn.classList.add("btn", "btn-danger","ms-4","mb-3")
     let divButton = document.createElement("div");
     divButton.classList.add( "divButton")
     
-    button.innerHTML = "View";
-    divButton.appendChild(button);
+    viewBtn.innerHTML = "View";
+     divButton.appendChild(viewBtn);
+    
+   
+
+
+    //create copy button
+
+    let copyBtn = document.createElement("button");
+    copyBtn.classList.add("btn","btn-floating", "btn-secondary","ms-4","mb-3","me-4")
+  
+    
+    copyBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+  </svg>`;
+    divButton.appendChild(copyBtn);
+    
     divhTitle.appendChild(divButton);
 
-    button.addEventListener("click", (e) => {
-      window.open(news.url,"_blank")})
-  
+    
+ 
+
+
+    //event listener
+
+    viewBtn.addEventListener("click", (e) => {
+      window.open(news.url,"_blank")}); //open link in new tab
+      
+      
+      copyBtn.addEventListener("click", (e)=> {
+        
+        console.log("copied "+ news.url);
+
+        navigator.clipboard.writeText(news.url);
+
+
+        // popover link copied
+        let linkCopied = document.createElement("div");
+        linkCopied.innerHTML ="link copied!";
+        divButton.appendChild(linkCopied);
+        linkCopied.classList.add("linkCopied");
+        setTimeout(function () {
+          linkCopied.remove();
+        },1000);
+      });
     };
+
+    
 
     // console.log(news.title + news.url +" "+ newsDate + " ")

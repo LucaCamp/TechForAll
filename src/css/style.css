@@ -27,14 +27,11 @@
 }
 
 .divButton {
-  
   position: absolute;
   bottom: 2px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  
-  
 }
 
 
@@ -55,9 +52,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-
 }
-
 
 };

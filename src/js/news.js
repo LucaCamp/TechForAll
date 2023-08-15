@@ -23,8 +23,6 @@ export function showNews(news,newsDate){
   divhTitle.appendChild(pDate)
   pDate.innerHTML =" DATE: "+ newsDate + " ";
 
-
-
   //create view button
 
   let viewBtn = document.createElement("button");
@@ -35,9 +33,6 @@ export function showNews(news,newsDate){
   viewBtn.innerHTML = "View";
   divButton.appendChild(viewBtn);
   
- 
-
-
   //create copy button
 
   let copyBtn = document.createElement("button");
@@ -52,10 +47,6 @@ export function showNews(news,newsDate){
   
   divhTitle.appendChild(divButton);
 
-  
-
-
-
   //event listener
 
   viewBtn.addEventListener("click", () => {
@@ -68,11 +59,11 @@ export function showNews(news,newsDate){
 
       navigator.clipboard.writeText(news.url);
 
-
       // popover link copied
       let linkCopied = document.createElement("div");
       linkCopied.innerHTML ="link copied!";
       divButton.appendChild(linkCopied);
+
       linkCopied.classList.add("linkCopied");
       setTimeout(function () {
         linkCopied.remove();

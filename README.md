@@ -52,7 +52,7 @@ At startup, the application shows the list of the last 10 news available by disp
 
 The load more button allows users to show the next 10 news items
 
-Visit my portfolio to know more about me: <a href="lucacamp.github.io">Portfolio </a>
+Visit my portfolio to know more about me: <a href="https://lucacamp.github.io/">Portfolio </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
